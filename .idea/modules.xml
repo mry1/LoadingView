@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LoadingView.iml" filepath="$PROJECT_DIR$/LoadingView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adimageview/adimageview.iml" filepath="$PROJECT_DIR$/adimageview/adimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customprogressbar/customprogressbar.iml" filepath="$PROJECT_DIR$/customprogressbar/customprogressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customvolumcontrolbar/customvolumcontrolbar.iml" filepath="$PROJECT_DIR$/customvolumcontrolbar/customvolumcontrolbar.iml" />
+    </modules>
+  </component>
+</project>
