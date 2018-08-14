@@ -1,7 +1,10 @@
 package com.liuyi;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.WindowManager;
 
 import com.liuyi.loadingview.R;
 
@@ -52,6 +55,29 @@ public class ResourceUtils {
      */
     public static String getResourceName(Context context, int resid) {
         return context.getResources().getResourceName(resid);
+    }
+
+    public static int getScreenWidth(Context context) {
+//        WindowManager manager = context.getWindowManager();
+//        DisplayMetrics outMetrics = new DisplayMetrics();
+//        manager.getDefaultDisplay().getMetrics(outMetrics);
+//        int width = outMetrics.widthPixels;
+//        int height = outMetrics.heightPixels;
+        Resources resources = context.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        float density = dm.density;
+        int width = dm.widthPixels;
+        int height = dm.heightPixels;
+        return width;
+    }
+
+    public static int getScreenHeight(Context context) {
+        Resources resources = context.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        float density = dm.density;
+        int width = dm.widthPixels;
+        int height = dm.heightPixels;
+        return height;
     }
 
 }

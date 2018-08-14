@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/customprogressbar/customprogressbar.iml" filepath="$PROJECT_DIR$/customprogressbar/customprogressbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/customvolumcontrolbar/customvolumcontrolbar.iml" filepath="$PROJECT_DIR$/customvolumcontrolbar/customvolumcontrolbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipemenulayout/swipemenulayout.iml" filepath="$PROJECT_DIR$/swipemenulayout/swipemenulayout.iml" />
     </modules>
   </component>
 </project>

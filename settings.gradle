@@ -1,1 +1,1 @@
-include ':app', ':customvolumcontrolbar', ':customprogressbar', ':adimageview'
+include ':app', ':customvolumcontrolbar', ':customprogressbar', ':adimageview', ':swipemenulayout'
