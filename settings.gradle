@@ -1,1 +1,1 @@
-include ':app', ':customvolumcontrolbar', ':customprogressbar', ':adimageview', ':swipemenulayout'
+include ':app', ':customvolumcontrolbar', ':customprogressbar', ':adimageview', ':swipemenulayout', ':test', ':myrxjava'
