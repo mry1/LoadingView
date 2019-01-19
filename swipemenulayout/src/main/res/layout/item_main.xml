@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.liuyi.swipemenulayout.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.liuyi.swipemenulayout.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -42,4 +42,4 @@
         android:paddingRight="30dp"
         android:background="@android:color/holo_blue_bright"
         android:text="置顶" />
-</com.liuyi.swipemenulayout.view.SwipeMenuLayout>
+</com.liuyi.swipemenulayout.SwipeMenuLayout>

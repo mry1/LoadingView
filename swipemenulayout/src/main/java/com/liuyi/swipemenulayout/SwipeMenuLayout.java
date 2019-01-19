@@ -16,6 +16,8 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 
 /**
+ * https://blog.csdn.net/zxt0601/article/details/53157090
+ * <p>
  * 【Item侧滑删除菜单】
  * 继承自ViewGroup，实现滑动出现删除等选项的效果，
  * 思路：跟随手势将item向左滑动，
@@ -480,6 +482,7 @@ public class SwipeMenuLayout extends ViewGroup {
                     //add by zhangxutong 2016 11 03 end
 
                     break;
+                default:
             }
             //模仿IOS 点击其他区域关闭：
             if (iosInterceptFlag) {

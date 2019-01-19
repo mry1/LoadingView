@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, ((TextView) v).getText().toString(), Toast.LENGTH_SHORT).show();
                 }
             }
+
+            @Override
+            public void onItemLongClick(View v, int position) {
+                Toast.makeText(MainActivity.this, position + "position", Toast.LENGTH_SHORT).show();
+            }
         });
         rv.setAdapter(adapter);
 
@@ -80,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
         public interface OnItemClickListener {
             void onItemClick(View v, int position);
+
+            void onItemLongClick(View v, int position);
         }
 
         private OnItemClickListener onItemClickListener;
@@ -87,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
             this.onItemClickListener = onItemClickListener;
         }
+
 
         @NonNull
         @Override
@@ -104,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             return mDatas.size();
         }
 
-        public class RVViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public class RVViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
             private TextView text;
             private TextView tv1;
             private TextView tv2;
@@ -114,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 text = (TextView) itemView.findViewById(R.id.text);
                 tv1 = (TextView) itemView.findViewById(R.id.tv1);
                 tv2 = (TextView) itemView.findViewById(R.id.tv2);
+                text.setOnLongClickListener(this);
                 text.setOnClickListener(this);
                 tv1.setOnClickListener(this);
                 tv2.setOnClickListener(this);
@@ -122,6 +131,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onItemClickListener.onItemClick(v, getAdapterPosition());
+            }
+
+            @Override
+            public boolean onLongClick(View v) {
+                onItemClickListener.onItemLongClick(v, getAdapterPosition());
+                return true;
             }
         }
     }
